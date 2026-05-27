@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — MappaMundi</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=Lora:ital,wght@0,400;0,600;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --parch: #f2e8d5;
+  --parch2: #ede0c4;
+  --parch3: #e5d5a8;
+  --ink: #2c1f0e;
+  --ink2: #5a3e28;
+  --ink3: #8b6343;
+  --red: #9b2335;
+  --teal: #1a5c5c;
+  --gold: #b8860b;
+  --radius: 6px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Lora', serif;
+  background: var(--parch);
+  color: var(--ink);
+  line-height: 1.7;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E");
+}
+header {
+  background: var(--ink);
+  border-bottom: 3px solid var(--gold);
+  padding: 24px 32px;
+}
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px; font-weight: 900; font-style: italic;
+  color: var(--parch); letter-spacing: 0.5px;
+}
+.logo span { color: var(--gold); }
+.logo-sub {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px; letter-spacing: 3px;
+  color: var(--ink3); text-transform: uppercase; margin-top: 4px;
+}
+main {
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 48px 32px 64px;
+}
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px; font-weight: 900; font-style: italic;
+  color: var(--ink); margin-bottom: 6px;
+}
+.effective {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px; color: var(--ink3);
+  letter-spacing: 1px; margin-bottom: 36px;
+}
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px; font-weight: 700;
+  color: var(--ink); margin: 36px 0 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--parch3);
+}
+p { margin-bottom: 14px; font-size: 14px; color: var(--ink2); }
+ul { margin: 0 0 14px 20px; }
+li { font-size: 14px; color: var(--ink2); margin-bottom: 6px; }
+.highlight {
+  background: var(--parch2);
+  border-left: 3px solid var(--gold);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 14px 18px; margin: 20px 0;
+}
+.highlight p { margin: 0; }
+a { color: var(--teal); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.tag {
+  display: inline-block;
+  font-family: 'DM Mono', monospace; font-size: 10px;
+  padding: 2px 8px; border-radius: 100px;
+  background: rgba(26,92,92,0.1); border: 1px solid var(--teal);
+  color: var(--teal); margin-right: 4px; margin-bottom: 4px;
+}
+.tag.gold {
+  background: rgba(184,134,11,0.1); border-color: var(--gold); color: var(--gold);
+}
+footer {
+  text-align: center;
+  padding: 24px;
+  font-family: 'DM Mono', monospace;
+  font-size: 10px; letter-spacing: 2px;
+  color: var(--ink3); text-transform: uppercase;
+  border-top: 1px solid var(--parch3);
+}
+@media (max-width: 600px) {
+  main { padding: 32px 20px 48px; }
+  header { padding: 18px 20px; }
+  h1 { font-size: 24px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Mappa<span>Mundi</span></div>
+  <div class="logo-sub">Privacy Policy</div>
+</header>
+
+<main>
+  <h1>Informativa sulla Privacy</h1>
+  <div class="effective">Versione 1.0 — Efficace dal 27 maggio 2026 · ID pacchetto: it.mappamundi.app</div>
+
+  <div class="highlight">
+    <p><strong>In sintesi:</strong> MappaMundi non raccoglie, non trasmette e non condivide i tuoi dati personali con nessuno. Tutto rimane sul tuo dispositivo.</p>
+  </div>
+
+  <h2>1. Chi siamo</h2>
+  <p>MappaMundi è un'applicazione personale di diario di viaggio sviluppata da un privato. Per qualsiasi domanda relativa a questa informativa puoi scrivere a: <a href="mailto:gemasrlu@gmail.com">gemasrlu@gmail.com</a></p>
+
+  <h2>2. Dati trattati e finalità</h2>
+  <p>L'app tratta le seguenti categorie di dati, <strong>esclusivamente in locale sul tuo dispositivo</strong>:</p>
+  <ul>
+    <li><strong>Dati di viaggio:</strong> paesi visitati, date, numero di visite, valutazioni, note, wishlist. Inseriti manualmente dall'utente e salvati in <code>localStorage</code>.</li>
+    <li><strong>Città di residenza:</strong> il nome della città inserito dall'utente viene inviato a Nominatim (OpenStreetMap) solo per ottenere le coordinate geografiche. Nessun dato identificativo viene trasmesso.</li>
+    <li><strong>Posizione GPS:</strong> richiesta solo quando l'utente preme esplicitamente il pulsante 📍. Usata istantaneamente per identificare il paese o città correnti. Non viene registrata né conservata.</li>
+    <li><strong>Fotografie:</strong> caricate volontariamente dall'utente. Elaborate localmente per leggere i metadati EXIF (GPS, fotocamera). Salvate nel dispositivo in <code>localStorage</code> come anteprima. Non vengono mai caricate su server esterni.</li>
+    <li><strong>Preferenze:</strong> tema (chiaro/scuro), lingua, proiezione mappa. Salvate localmente.</li>
+  </ul>
+
+  <h2>3. Dati NON raccolti</h2>
+  <p>MappaMundi <strong>non raccoglie</strong>:</p>
+  <ul>
+    <li>Nome, cognome, email o altri dati anagrafici</li>
+    <li>Dati di utilizzo, analytics o telemetria</li>
+    <li>Dati di pagamento</li>
+    <li>Identificatori pubblicitari</li>
+    <li>Dati biometrici</li>
+  </ul>
+  <p>Il developer non ha accesso ad alcun dato dell'utente.</p>
+
+  <h2>4. Servizi di terze parti</h2>
+  <p>L'app si connette ai seguenti servizi esclusivamente per caricare risorse o dati geografici pubblici:</p>
+  <ul>
+    <li><strong>Nominatim / OpenStreetMap</strong> <span class="tag">geocoding</span> — riceve il nome della città per restituire le coordinate. Privacy policy: <a href="https://osmfoundation.org/wiki/Privacy_Policy" target="_blank">osmfoundation.org</a></li>
+    <li><strong>jsDelivr CDN</strong> <span class="tag gold">CDN</span> — fornisce i dati geografici TopoJSON del mondo (world-atlas). Nessun dato utente trasmesso.</li>
+    <li><strong>Skypack CDN</strong> <span class="tag gold">CDN</span> — fornisce le librerie d3-geo, topojson-client, html2canvas. Nessun dato utente trasmesso.</li>
+    <li><strong>Google Fonts</strong> <span class="tag gold">CDN</span> — carica i font tipografici. Privacy policy: <a href="https://policies.google.com/privacy" target="_blank">policies.google.com</a></li>
+  </ul>
+  <p>Nessuno di questi servizi riceve informazioni personali identificabili dell'utente.</p>
+
+  <h2>5. Archiviazione e sicurezza</h2>
+  <p>Tutti i dati di viaggio sono archiviati esclusivamente in <code>localStorage</code> del dispositivo, sotto la chiave <code>mm_v4</code>. Non esiste alcun server backend, nessun account utente e nessuna sincronizzazione cloud.</p>
+  <p>I dati rimangono sul dispositivo finché l'utente non li cancella manualmente tramite la funzione "Ripristina" dell'app, o finché non cancella i dati del browser/app dalle impostazioni del sistema.</p>
+
+  <h2>6. Permessi richiesti</h2>
+  <ul>
+    <li><strong>Accesso alla posizione (GPS):</strong> richiesto solo su esplicita azione dell'utente. Non attivo in background.</li>
+    <li><strong>Accesso alla fotocamera / galleria:</strong> richiesto solo quando l'utente aggiunge una foto a un paese. Le foto non vengono mai trasmesse all'esterno.</li>
+    <li><strong>Accesso a internet:</strong> necessario per caricare le librerie JavaScript e i dati geografici dai CDN all'avvio.</li>
+  </ul>
+
+  <h2>7. Minori</h2>
+  <p>MappaMundi non raccoglie consapevolmente dati di minori di 13 anni. L'app non contiene contenuti inappropriati per minori e non prevede interazioni sociali o acquisti in-app.</p>
+
+  <h2>8. Diritti dell'utente</h2>
+  <p>Poiché tutti i dati risiedono localmente sul tuo dispositivo, hai il pieno controllo:</p>
+  <ul>
+    <li><strong>Accesso:</strong> usa la funzione "Backup" per esportare tutti i tuoi dati in formato JSON.</li>
+    <li><strong>Cancellazione:</strong> usa "Ripristina tutto" nell'app, oppure cancella i dati dell'app dalle impostazioni del dispositivo.</li>
+    <li><strong>Portabilità:</strong> il file JSON esportato contiene tutti i tuoi dati in formato leggibile.</li>
+  </ul>
+
+  <h2>9. Modifiche a questa informativa</h2>
+  <p>Eventuali modifiche a questa informativa verranno pubblicate su questa pagina con una nuova data di efficacia. Ti invitiamo a consultarla periodicamente.</p>
+
+  <h2>10. Contatti</h2>
+  <p>Per qualsiasi domanda o richiesta relativa alla privacy: <a href="mailto:gemasrlu@gmail.com">gemasrlu@gmail.com</a></p>
+</main>
+
+<footer>
+  MappaMundi · it.mappamundi.app · Privacy Policy v1.0
+</footer>
+
+</body>
+</html>
